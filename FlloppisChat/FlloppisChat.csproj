@@ -7,8 +7,8 @@
     <ProjectGuid>{5C2F0B6A-7CA6-4131-ABBF-3F1D4650154E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>QuickChat</RootNamespace>
-    <AssemblyName>QuickChat</AssemblyName>
+    <RootNamespace>FlloppisChat</RootNamespace>
+    <AssemblyName>FlloppisChat</AssemblyName>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,6 +42,9 @@
     </Reference>
     <Reference Include="LethalConfig">
       <HintPath>..\..\..\..\..\..\..\AppData\Roaming\r2modmanPlus-local\LethalCompany\profiles\Default\BepInEx\plugins\AinaVT-LethalConfig\LethalConfig\LethalConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="QuickChat">
+      <HintPath>..\..\..\Quick Chat\Export\AlFungy-QuickChat\plugins\QuickChat\QuickChat.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -92,7 +95,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RadialMenuSetupDefaults.cs" />
+    <Compile Include="FlloppisMenuSetup.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -3,11 +3,9 @@ using BepInEx.Configuration;
 using BepInEx.Logging;
 using HarmonyLib;
 
-using GameNetcodeStuff;
-using QuickChat.RadialMenu;
 using LethalConfig;
 
-namespace QuickChat
+namespace FlloppisChat
 {
 	[BepInPlugin(PluginInfo.ModGUID, PluginInfo.ModName, PluginInfo.ModVersion)]
 	[BepInDependency("alfungy.quickchat")]
@@ -24,9 +22,9 @@ namespace QuickChat
 			LogSource.LogInfo($"{PluginInfo.ModName} {PluginInfo.ModVersion} has been loaded!");
 
 			LethalConfigManager.SkipAutoGen();
-			RadialMenuSetupDefaults.Init();
-
-			Harmony.PatchAll(typeof(RadialMenuSetupDefaults));
+			FlloppisMenuSetup.Init();
+			
+			Harmony.PatchAll(typeof(FlloppisMenuSetup));
 		}
 
 	}
