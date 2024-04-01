@@ -104,35 +104,52 @@ namespace FlloppisChat
 			{
 				new RadialMenu.RadialButton("Followwi me"),
 				new RadialMenu.RadialButton("Stopsi"),
-				new RadialMenu.RadialButton("Shhhh!"),
+				new RadialMenu.RadialButton("Shhhh", '!'),
 				new RadialMenu.RadialButton("Amma go \'head"),
 				new RadialMenu.RadialButton("Letsi go", "\"Letsi go {direction}\"", flloppisPositionsMenu)
 			});
 
 			flloppisAnswersMenu.UpdateRadialButtons(new List<RadialMenu.RadialButton>()
 			{
-				new RadialMenu.RadialButton("Eh?", Color.gray)
+				new RadialMenu.RadialButton("Eh", '?', Color.gray)
 				{
-					textColor = Color.white
+					textColor = Color.white,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton("Uuhh-", Color.gray),
-				new RadialMenu.RadialButton("Oi!", Color.gray),
-				new RadialMenu.RadialButton("Dunno-", Color.gray),
-				new RadialMenu.RadialButton("Nuh uh!", Color.red),
-				new RadialMenu.RadialButton("ACK!", Color.white)
+				new RadialMenu.RadialButton("Uuhh", '-', Color.gray),
+				new RadialMenu.RadialButton("Oi", '!', Color.gray),
+				new RadialMenu.RadialButton("Wah", '?', Color.gray),
+				new RadialMenu.RadialButton("Dunno", '-', Color.gray),
+				new RadialMenu.RadialButton("Kiinda", '-', Color.gray),
+				new RadialMenu.RadialButton("Nuh uh", '!')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton("AAA?", Color.white)
+				new RadialMenu.RadialButton("Nono", '!', Color.red),
+				new RadialMenu.RadialButton("ACK", '!', Color.white)
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton("AAAAA!!!", Color.white)
+				new RadialMenu.RadialButton("AAA", '?', Color.white)
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton("Yuh?", Color.green),
-				new RadialMenu.RadialButton("Yuh!", Color.green)
+				new RadialMenu.RadialButton("AAAAA", "AAAAA!!!", "!!!")
+				{
+					buttonColor = Color.white,
+					textColor = Color.red,
+					useTextColorOnChat = true
+				},
+				new RadialMenu.RadialButton("HEHEHHEEE", Color.green),
+				new RadialMenu.RadialButton("Yuh", '?', Color.green),
+				new RadialMenu.RadialButton("Yeye", '!', Color.green),
+				new RadialMenu.RadialButton("Yuh", '!', Color.green),
+				new RadialMenu.RadialButton("Hehe", '!', Color.green),
+				new RadialMenu.RadialButton("Ello", '!', Color.green),
+				new RadialMenu.RadialButton("Byebye", '!', Color.blue)
 			});
 
 			flloppisQuestionsMenu.UpdateRadialButtons(new List<RadialMenu.RadialButton>()
@@ -148,77 +165,94 @@ namespace FlloppisChat
 
 			flloppisEmotionsMenu.UpdateRadialButtons(new List<RadialMenu.RadialButton>
 			{
-				new RadialMenu.RadialButton("O-O")
+				new RadialMenu.RadialButton(">:D", ' ')
 				{
-					textColor = Color.green
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton("O-O!")
+				new RadialMenu.RadialButton("D:<", ' ')
 				{
-					textColor = Color.green
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton("O~O")
+				new RadialMenu.RadialButton(">:P", ' ')
 				{
-					textColor = Color.blue
+					textColor = Color.green,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton("O~O!")
+				new RadialMenu.RadialButton(">:]", ' ')
 				{
-					textColor = Color.blue
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton(">:[")
+				new RadialMenu.RadialButton(">:[", ' ')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton(">:]")
+				new RadialMenu.RadialButton(">-<", ' ')
 				{
-					textColor = Color.red
+					textColor = Color.blue,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton("o-o")
+				new RadialMenu.RadialButton(">~<", ' ')
 				{
-					textColor = Color.blue
+					textColor = Color.blue,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton(">~<")
+				new RadialMenu.RadialButton("o~o", ' ')
 				{
-					textColor = Color.blue
+					textColor = Color.blue,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton(">~<!")
+				new RadialMenu.RadialButton(";<", ' ')
 				{
-					textColor = Color.blue
+					textColor = Color.blue,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton(">-<")
+				new RadialMenu.RadialButton(":>", ' ')
 				{
-					textColor = Color.blue
+					textColor = Color.green,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton(">-<!")
+				new RadialMenu.RadialButton("O-O", ' ')
 				{
-					textColor = Color.blue
+					textColor = Color.green,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton(";<")
+				new RadialMenu.RadialButton("O~O", ' ')
 				{
-					textColor = Color.blue
+					textColor = Color.blue,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton(";>")
+				new RadialMenu.RadialButton("@~@", ' ')
 				{
-					textColor = Color.green
+					textColor = Color.blue,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton(">:P")
+				new RadialMenu.RadialButton("T-T", ' ')
 				{
-					textColor = Color.green
+					textColor = Color.blue,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton(":o")
+				new RadialMenu.RadialButton("ToT", ' ')
 				{
-					textColor = Color.red
+					textColor = Color.blue,
+					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton(">:o")
-				{ 
-					textColor = Color.red
-				},
-				new RadialMenu.RadialButton(">:D"),
-				new RadialMenu.RadialButton(">:D"),
-				new RadialMenu.RadialButton("D;")
+				new RadialMenu.RadialButton("O - O", ' '),
+				new RadialMenu.RadialButton(":o", ' '),
+				new RadialMenu.RadialButton(">:o", ' ')
 				{
-					textColor = Color.blue
+					textColor = Color.red,
+					useTextColorOnChat = true
+				},
+				new RadialMenu.RadialButton(":o", '?')
+				{
+					textColor = Color.blue,
+					useTextColorOnChat = true
 				}
-			});
+			});;
 
 			flloppisObservationsMenu.UpdateRadialButtons(new List<RadialMenu.RadialButton>()
 			{
@@ -234,71 +268,88 @@ namespace FlloppisChat
 			{
 				new RadialMenu.RadialButton("NUTCRACKERSI", '!')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
 				new RadialMenu.RadialButton("COILLSI", '!')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
 				new RadialMenu.RadialButton("JESTERRI", '!')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
 				new RadialMenu.RadialButton("MASKII", '!')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
 				new RadialMenu.RadialButton("GIANTI", '!')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
 				new RadialMenu.RadialButton("BIRDSII", '!')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
 				new RadialMenu.RadialButton("SNAREY FLEE", '!')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
 				new RadialMenu.RadialButton("SPIDERSI", '!')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
 				new RadialMenu.RadialButton("BUGS-A", '!')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
 				new RadialMenu.RadialButton("BRACKENNA", '!')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
 				new RadialMenu.RadialButton("THUMPERSI", '!')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
 				new RadialMenu.RadialButton("SLIMESII", '!')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
 				new RadialMenu.RadialButton("GHOSTII HAUNTED", '!')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
 				new RadialMenu.RadialButton("LIZARDSI", '!')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
 				new RadialMenu.RadialButton("RUNSI", '!')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
 				new RadialMenu.RadialButton("GO GO", '!')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
 				new RadialMenu.RadialButton("HELPSII", '!')
 				{
-					textColor = Color.red
+					textColor = Color.red,
+					useTextColorOnChat = true
 				},
 			});
 
