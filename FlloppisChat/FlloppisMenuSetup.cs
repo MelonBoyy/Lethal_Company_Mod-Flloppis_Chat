@@ -45,7 +45,7 @@ namespace FlloppisChat
 
 			flloppisPositionsMenu.UpdateRadialButtons(new List<RadialMenu.RadialButton>()
 			{
-				new RadialMenu.RadialButton("thaddar way!", "\"thaddar way!\" (point)")
+				new RadialMenu.RadialButton("thaddar way", "\"thaddar way!\" (point)", "!")
 				{
 					postRadialButtonClicked = (radialMenu, radialButton) => PerformEmoteFix(2)
 				},
@@ -165,84 +165,84 @@ namespace FlloppisChat
 
 			flloppisEmotionsMenu.UpdateRadialButtons(new List<RadialMenu.RadialButton>
 			{
-				new RadialMenu.RadialButton(">:D", ' ')
+				new RadialMenu.RadialButton(">:D", string.Empty)
 				{
 					textColor = Color.red,
 					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton("D:<", ' ')
+				new RadialMenu.RadialButton("D:<", string.Empty)
 				{
 					textColor = Color.red,
 					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton(">:P", ' ')
+				new RadialMenu.RadialButton(">:P", string.Empty)
 				{
 					textColor = Color.green,
 					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton(">:]", ' ')
+				new RadialMenu.RadialButton(">:]", string.Empty)
 				{
 					textColor = Color.red,
 					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton(">:[", ' ')
+				new RadialMenu.RadialButton(">:[", string.Empty)
 				{
 					textColor = Color.red,
 					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton(">-<", ' ')
+				new RadialMenu.RadialButton(">-<", string.Empty)
 				{
 					textColor = Color.blue,
 					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton(">~<", ' ')
+				new RadialMenu.RadialButton(">~<", string.Empty)
 				{
 					textColor = Color.blue,
 					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton("o~o", ' ')
+				new RadialMenu.RadialButton("o~o", string.Empty)
 				{
 					textColor = Color.blue,
 					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton(";<", ' ')
+				new RadialMenu.RadialButton(";<", string.Empty)
 				{
 					textColor = Color.blue,
 					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton(":>", ' ')
+				new RadialMenu.RadialButton(":>", string.Empty)
 				{
 					textColor = Color.green,
 					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton("O-O", ' ')
+				new RadialMenu.RadialButton("O-O", string.Empty)
 				{
 					textColor = Color.green,
 					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton("O~O", ' ')
+				new RadialMenu.RadialButton("O~O", string.Empty)
 				{
 					textColor = Color.blue,
 					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton("@~@", ' ')
+				new RadialMenu.RadialButton("@~@", string.Empty)
 				{
 					textColor = Color.blue,
 					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton("T-T", ' ')
+				new RadialMenu.RadialButton("T-T", string.Empty)
 				{
 					textColor = Color.blue,
 					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton("ToT", ' ')
+				new RadialMenu.RadialButton("ToT", string.Empty)
 				{
 					textColor = Color.blue,
 					useTextColorOnChat = true
 				},
-				new RadialMenu.RadialButton("O - O", ' '),
-				new RadialMenu.RadialButton(":o", ' '),
-				new RadialMenu.RadialButton(">:o", ' ')
+				new RadialMenu.RadialButton("O - O", string.Empty),
+				new RadialMenu.RadialButton(":o", string.Empty),
+				new RadialMenu.RadialButton(">:o", string.Empty)
 				{
 					textColor = Color.red,
 					useTextColorOnChat = true

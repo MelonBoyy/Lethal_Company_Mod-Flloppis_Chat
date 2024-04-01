@@ -33,6 +33,6 @@ namespace FlloppisChat
 	{
 		public const string ModGUID = "alfungy.flloppischat";
 		public const string ModName = "Flloppis Chat";
-		public const string ModVersion = "1.0.1";
+		public const string ModVersion = "1.0.2";
 	}
 }
